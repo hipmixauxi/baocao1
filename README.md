@@ -142,14 +142,23 @@
 + POP:  Post Office Protocol - giao thức email
 + DNS:Domain Name System - hệ thống tên  miền
 + HTTP:HyperText Transfer Protocol - giao thức truyền tải siêu văn bản
+
 *Tạo ra phương thức cho trình duyệt web (browser) truy nhập tới máy phục vụ web và yêu cầu các tài liệu đa phương tiện (được tạo bởi ngôn ngữ đánh dấu siêu văn bản HTML) như văn bản, ảnh, âm thanh, hình ảnh động, phim số hoá.... Giao thức này là giao thức không lưu giữ trạng thái (stateless protocol), cổng tiêu chuẩn cho HTTP trên máy phục vụ web là 80 và có thể được xác định lại khi thiết lập cấu hình cho máy phục vụ web*
+
 *Khi một máy trạm gửi một yêu cầu một trang web trên website (sử dụng HTTP) thông qua địa chỉ tên của website, đầu tiên là việc phân giải ngược địa chỉ tên website thành địa chỉ IP nhờ máy chủ DNS. Sau đó là quá trình bắt tay ba bước, khởi tạo kết nối lớp TCP giữa máy trạm và máy phục vụ web, hình thành kết nối lớp ứng dụng giữa máy trạm và máy phục vụ web. Máy trạm gửi yêu cầu trang web và máy phục vụ web phản hồi, gửi trả kết quả về máy trạm. Cuối cùng là tiến trình đóng kết nối lớp ứng dụng giữa máy trạm và máy phục vụ web, đóng kết nối lớp TCP.*
 + FTP: File Transfer Protocol - giao thức truyền tệp
+
 *Dùng để truyền tập dữ liệu từ máy tính này sang máy tính khác. Các tập tin có thể ở dạng văn bản ASCII, tập tin nhị phân thực thi được...Mục tiêu chính của FTP là khuyến khích việc chia sẻ tài nguyên (dữ liệu, chương trình), truyền dữ liệu có hiệu quả và tin cậy. Có thể khai thác FTP theo hai chế độ: User FTP (cần có tài khoản riêng) và Anonymous FTP (không cần tài khoản riêng), có thể quy định quyền truy nhập của người sử dụng với từng thư mục, từng tệp dữ liệu, giới hạn số kết nối đồng thời tới cùng một nơi lưu trữ dữ liệu. Cổng tiêu chuẩn dành cho FTP hoạt động trên máy chủ là 20 và 21, trong đó cổng 20 dành cho kết nối truyền dữ liệu, cổng 21 dành cho kết nối điều khiển*
+
 *Đầu tiên là tiến trình bắt tay ba bước, khởi tạo kết nối điều khiển (control connection) lớp TCP giữa máy trạm và máy phục vụ FTP. Sau đó là tiến trình xác thực FTP máy trạm, nếu có yêu cầu truyền dữ liệu, kết nối truyền dữ liệu (data connection) được hình thành. Tiếp theo là tiến trình truyền dữ liệu và cuối cùng là tiến trình đóng kết nối truyền dữ liệu. Kết nối điều khiển chỉ bị ngắt bỏ khi kết thúc phiên làm việc của FTP (lệnh QUIT)*
+
 + SMTP: Simple Mail Transfer Protocol - Giao thức truyền tải thư tín đơn giản
+
 *Một hệ thống thư điện tử được chia làm hai phần UA (User Agent) và MTA (Message Transfer Agent). UA tương tác trực tiếp với người dùng cuối. MTA dùng để định tuyến thông điệp và gửi thông điệp. Giao thức truyền thư đơn giản SMTP (Simple Mail Transfer Protocol)  là một trong những giao thức khá phổ biến trong các hệ thống thư điện tử. SMTP hoạt động dựa trên TCP/IP, theo mô hình lưu giữ và chuyển tiếp (store and forward) thông điệp giữa các MTA hoạt động theo SMTP. Các máy chủ SMTP này làm chức năng nhận thông điệp, quyết định việc định tuyến thông điệp  sao cho các thông điệp đến được đúng hệ thống đích*
+
 *Trước các tiến trình gửi nhận là tiến trình bắt tay ba bước của TCP giữa SMTP gửi và SMTP nhận, thiết lập kết nối TCP. Đây là kết nối song công toàn phần (full duplex connection) dùng để truyền điều khiển cùng với dữ liệu. Tiếp theo là tiến trình xác thực,  SMTP gửi/nhận các lệnh điều khiển, xử lý các phản hồi, và dữ liệu. Cuối cùng, kết nối  TCP bị ngắt bỏ khi SMTP phát  lệnh QUIT. Số hiệu cổng tiêu chuẩn SMTP trên máy chủ nhận là 25*
+
 + Telnet: TErminaL NETwork - thường cung cấp những phiên giao dịch đăng nhập giữa các áy tính trên mạng, dùng dòng lệnh có tính định hướng người dùng.
+
 *mô phỏng thiết bị đầu cuối, thường được dùng để cung cấp truy cập từ xa tới máy chủ và các thiết bị mạng*
  
