@@ -46,3 +46,59 @@
 
 ###3. Network Layer (Tầng mạng):
   - Lập địa chỉ, diễn dịch địa chỉ tên logic thành địa chỉ vật lý.
+  - Kiểm soát hoạt động của mạng con, quyết định đường dẫn vật lý dựa trên điều kiện mạng, mức độ ưu tiên của dịch vụ và các yếu tố khác.
++ Định tuyến: định tuyến khung trong mạng
++ Điều khiển lưu lượng mạng con
++ Phân mảnh khung
++ Ánh xạ địa chỉ vật lý logic: dịch địa chỉ hoặc tên logic thành địa chỉ vật lý
++ Tính toán việc sử dụng mạng con
+  - Đơn vị dữ liệu: Packets
+  _ Thuộc nhóm Media Layer
+
+###4. Transport Layer
+  - Đảm bảo gói tin được gửi thành công, theo thứ tự và không có lỗi
+  - Kích thước và độ phức tạp của giao thức truyền tải phụ thuộc vào loại dịch vụ nhận được từ Network Layer
+  - Cung cấp:
++ Phân đoạn gói tin: nhận gói tin từ lớp Session, chia thành các đơn vị nhỏ hơn (nếu chưa đủ nhỏ) và chuyển xuống Network Layer
++ Báo nhận tin: báo nhận từ đầu cuối đáng tin cậy
++ Kiểm soát lưu lượng tin: yêu cầu trạm tuyền gửi trả khi không có bộ đệm tin
++ Đa hợp phiên: kết hợp 1 số luồng tin hoặc phiên vào 1 liên kết logic và theo dõi
+  - Transport Layer có thể chậm nhận tin tương  đối lớn nhưng có những giới hạn kích thước nghiêm ngặt do Networ Layer áp đăt
+  - Đơn vị dữ liệu:Segments
+  - Thuộc nhóm: Host Layer
+
+###5. Session Layer
+  - Thiết lập phiên giữa các chương trình chạy trên các trạm khác nhau.
++ Thiết lập, bảo trì và kết thúc phiên
++ Hỗ trợ phiên: thực hiện các chức năng cho phép các quy trình giao tiếp qua mạng, thực hiện bảo mật, nhận dạng tên..v..v..
+  - Đơn vị dữ liệu: Data
+  - Thuộc nhóm: Host Layer
+
+###6. Presentation Layer
+  - Định dạng dữ liệu dùng cho tầng ứng dụng (Application)
+  - Dịch dữ liệu từ 1 định dạng do tần ứng dụng sử dụng thành định dạng phổ biến tại trạm gửi, sau đó dịch lại thành dàng quen thuộc với tầng ứng dụng tại  trạm nhận.
+  - Cung cấp:
++ Dịch mã kí tự
++ Chuyển đổi dữ liệu: thứ tự bit..v.v..
++ Nén dữ liệu: giảm số lượng bit cần truyền
++ Mã hóa dữ liệu: mã hóa mật khảu...v...
+  - Đơn vị dữ liệu: Data
+  - Thuộc nhóm: Host Layer
+
+###7. Application Layer
+  - Đóng vai trò như cửa sổ giao  tiếp giữa người dùng và quy trình ứng dụng để tuy cập dịch vụ mạng
+  - Bao gồm các chức năng cần thiết:
++ Chuyển hướng thiết bị và chia sẻ tài nguyên
++ Truy cập tệp, máy in từ xa
++ Kết nối giữa các quy trình
++ Quản lý mạng
++ Dịch vụ thư mục
++ Nhắn tin điện tử
++ Điểm đầu cuối mạng ảo
+  - Đơn vị dữ liệu: Data
+  - Thuộc nhóm: Host Layer
+
+#II. TCP/IP
+###1.
+
+ 
